@@ -17,7 +17,8 @@ export class ServerElementComponent implements OnInit {
   //HERE WE ADDED DECORATOR TO PROPETY
    // @Input() element:{type:string, name:string,desc:string}; // U CAN USE THIS OR BELOW ONE
   @Input('srvElement') element:{type:string, name:string,desc:string}; //if u want property with capital leters so pass parameter nd use it in html
-//if u want to use other name for binding then use a parameter and the old element will not work if der is parameter
+//sometimes u dont want touse  same proptery to inside compt and outside comp so we crated srvElemnt name
+  //if u want to use other name for binding then use a parameter and the old element will not work if der is parameter
 
   constructor() { }
 
