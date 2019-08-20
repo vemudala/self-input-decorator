@@ -11,11 +11,12 @@ export class ServerElementComponent implements OnInit {
 //6  element:{type:string, name:string,desc:string};//this is type defination  //you have to use  name 'element' for binding in parent component
 //7 now we can use propety in html // this can be used in only same component we cant access outside 
   //8 to access now go to app.comp.ts
-  // @Input() element:{type:string, name:string,desc:string};
+ 
 //   13 ur not able to access  element:{type:string, name:string,desc:string};//here u can access inside the component   
   //14 PARENT COMPT TO BE ABLE TO BIND THIS PROPERTY  (if u want to access at outside component)  so u need to assign @inputdecorator//
   //HERE WE ADDED DECORATOR TO PROPETY
-  @Input('srvElement') element:{type:string, name:string,desc:string};
+   // @Input() element:{type:string, name:string,desc:string}; // U CAN USE THIS OR BELOW ONE
+  @Input('srvElement') element:{type:string, name:string,desc:string}; //if u want property with capital leters so pass parameter nd use it in html
 //if u want to use other name for binding then use a parameter and the old element will not work if der is parameter
 
   constructor() { }
